@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details - Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="detali.css">
+    <script src="detali.js" defer></script>
+</head>
+<body>
+    <div class="item-modal" id="item-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img id="modal-image" src="" alt="" class="modal-image">
+                <button class="close-modal" id="close-modal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h2 id="modal-name" class="modal-name"></h2>
+                    <div id="modal-price" class="modal-price"></div>
+                </div>
+                <span id="modal-category" class="modal-category"></span>
+                <p id="modal-description" class="modal-description"></p>
+                
+                <div class="detail-section">
+                    <h3 class="detail-title">Ingredients</h3>
+                    <div id="modal-ingredients" class="ingredients-list"></div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3 class="detail-title">Nutrition Information</h3>
+                    <div id="modal-nutrition" class="nutrition-grid"></div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3 class="detail-title">Allergens</h3>
+                    <div id="modal-allergens" class="allergens"></div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3 class="detail-title">Cooking Information</h3>
+                    <p id="modal-cooking-info"></p>
+                </div>
+                
+                <button class="back-button" id="back-button">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant - Menu</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- <link rel="stylesheet" href="food.css"> -->
+    <script src="food.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-3xl font-bold underline">Delicious Bites Restaurant</h1>
+            <p>Click on any menu item to see detailed description</p>
+        </header>
+        
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for menu items...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn all active" data-category="all">
+                    <span>📋</span>
+                    <span>All</span>
+                </button>
+                <button class="filter-btn veg" data-category="veg">
+                    <span>🌱</span>
+                    <span>Vegetarian</span>
+                </button>
+                <button class="filter-btn non-veg" data-category="non-veg">
+                    <span>🍗</span>
+                    <span>Non-Veg</span>
+                </button>
+                <button class="filter-btn drinks" data-category="drinks">
+                    <span>🥤</span>
+                    <span>Drinks</span>
+                </button>
+                <button class="filter-btn dessert" data-category="dessert">
+                    <span>🍰</span>
+                    <span>Desserts</span>
+                </button>
+            </div>
+            
+            <div class="sort-controls">
+                <button class="sort-btn active" data-sort="default">Default</button>
+                <button class="sort-btn" data-sort="price-low">Price (Low to High)</button>
+                <button class="sort-btn" data-sort="price-high">Price (High to Low)</button>
+            </div>
+        </div>
+        
+        <div class="results-info" id="results-info"></div>
+        
+        <div class="filter-stats" id="filter-stats"></div>
+        
+        <div class="menu-grid" id="menu-container">
+            <!-- Menu items will be dynamically inserted here -->
+        </div>
+    </div>
+</body>
+</html>
